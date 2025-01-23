@@ -9,6 +9,5 @@ public class ejer3 {
             contador = numero * i;
             System.out.println(contador);
         }
-
     }
 }

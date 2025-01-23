@@ -10,6 +10,5 @@ public class ejer5 {
             contador = numero * mult++;
             System.out.println(contador);
         }while(contador<100);
-
     }
 }
