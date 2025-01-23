@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Exercises.iml" filepath="$PROJECT_DIR$/.idea/Java-Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramacionOrientadaObjetos/ProgramacionOrientadaObjetos.iml" filepath="$PROJECT_DIR$/ProgramacionOrientadaObjetos/ProgramacionOrientadaObjetos.iml" />
     </modules>
   </component>
 </project>
