@@ -11,7 +11,6 @@ public class ejer13 {
                     break;
                 }
             }
-
             if (primo){
                 System.out.println(i);
             }
