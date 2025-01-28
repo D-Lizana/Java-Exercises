@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/EjerciciosBucles/EjerciciosBucles.iml" filepath="$PROJECT_DIR$/EjerciciosBucles/EjerciciosBucles.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Exercises.iml" filepath="$PROJECT_DIR$/.idea/Java-Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProgramacionOrientadaObjetos/ProgramacionOrientadaObjetos.iml" filepath="$PROJECT_DIR$/ProgramacionOrientadaObjetos/ProgramacionOrientadaObjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramacionOrientadaObjetos/Reserva/Reserva.iml" filepath="$PROJECT_DIR$/ProgramacionOrientadaObjetos/Reserva/Reserva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RetosMixtos/RetosMixtos.iml" filepath="$PROJECT_DIR$/RetosMixtos/RetosMixtos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramacionOrientadaObjetos/Tienda/Tienda.iml" filepath="$PROJECT_DIR$/ProgramacionOrientadaObjetos/Tienda/Tienda.iml" />
     </modules>
   </component>
 </project>
