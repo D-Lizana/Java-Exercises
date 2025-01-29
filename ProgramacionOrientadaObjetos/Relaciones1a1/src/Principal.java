@@ -6,5 +6,14 @@ public class Principal {
         System.out.println("Color Lindt: "+l1.getColor());
         System.out.println("Sabor Lindt: "+l1.getBombon().getSabor());
         System.out.println("Precio Lindt: "+l1.getBombon().getPrecio());
+
+        l1.getBombon().setPrecio(5);
+        System.out.println("Precio Lindt: "+l1.getBombon().getPrecio());
+
+        // Ahora encapsulación
+
+
+        Lindt l2 = new Lindt("Amarillo","Cheesecake",0.99);
+        System.out.println(l2.getSaborBombon());
     }
 }
