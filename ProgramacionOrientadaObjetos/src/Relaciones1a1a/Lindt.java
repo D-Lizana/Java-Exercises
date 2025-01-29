@@ -1,3 +1,5 @@
+package Relaciones1a1a;
+
 public class Lindt {
 
     private String color;

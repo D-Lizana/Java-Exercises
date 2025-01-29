@@ -1,3 +1,5 @@
+package Relaciones1a1a;
+
 public class Bombon {
     private String sabor;
     private double precio;
