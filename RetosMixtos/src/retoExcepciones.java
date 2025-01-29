@@ -13,7 +13,7 @@ public class retoExcepciones {
         // Usamos la variable email para almacenar el String con el correo que se introduce por Scanner
         String email = teclado.next();
 
-        // a) Debe de tener el símbolo @
+        // a) Debe de tener el símbolo @ en el correo
 
         /*
         Ahora tenemos que crear una nueva clase que incluya la excepcion personalizada que vamos a utilizar,
