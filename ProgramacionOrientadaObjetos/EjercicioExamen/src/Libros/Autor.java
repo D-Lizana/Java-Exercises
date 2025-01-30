@@ -1,4 +1,4 @@
-package Libro;
+package Libros;
 
 public class Autor {
     private String nombre;
@@ -11,7 +11,9 @@ public class Autor {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public
+    public String imprimirAutor(){
+        return this.nombre;
+    }
 
     public String getNombre() {
         return nombre;
