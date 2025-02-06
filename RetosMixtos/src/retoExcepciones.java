@@ -63,7 +63,7 @@ public class retoExcepciones {
                 throw new ExcepcionEmail("El primer caracter tiene que ser una letra.");
             }
         }catch(ExcepcionEmail ex){
-            ex.printStackTrace();
+            System.err.println("Error: "+ ex.getMessage());;
         }
 
     }
