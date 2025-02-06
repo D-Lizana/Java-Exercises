@@ -11,8 +11,14 @@ public class Autor {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String imprimirAutor(){
-        return this.nombre;
+    public void visualizarAutor(){
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Nacionalidad: "+nacionalidad);
+        System.out.println("Fecha de Nacimiento: "+fechaNacimiento);
+    }
+
+    public void imprimirAutor(){
+        System.out.println("Autor: "+nombre);
     }
 
     public String getNombre() {
