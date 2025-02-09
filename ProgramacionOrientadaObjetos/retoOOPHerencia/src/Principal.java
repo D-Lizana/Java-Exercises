@@ -78,6 +78,7 @@ class Hora{
         else{
             return hora+":"+minutos;
         }
+        // return String.format("%02d:%02d",hora,minutos);
     }
 
 
@@ -151,6 +152,7 @@ class Hora12 extends Hora{
         }
         else{
             return hora+":"+minutos+amPm;
+            // return String.format("%02d:%02d",hora,minutos);
         }
     }
 }
