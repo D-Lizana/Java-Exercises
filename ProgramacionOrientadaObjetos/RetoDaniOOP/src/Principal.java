@@ -62,13 +62,25 @@ class Aula{
         System.out.println(alumnosSorteo);
     }
 
-
 }
 
 
 
 public class Principal {
     public static void main(String[] args) {
+        Alumno a1 = new Alumno("Jaime");
+        Alumno a2 = new Alumno("María");
+        Alumno a3 = new Alumno("Vanesa");
+
+        Aula aula1 = new Aula(1);
+        aula1.anadirAlumno(a1);
+        aula1.anadirAlumno(a2);
+        aula1.anadirAlumno(a3);
+
+        aula1.ordenar();
+
+        aula1.sorteo();
+
 
     }
 }
