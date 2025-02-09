@@ -78,6 +78,7 @@ public class Principal {
         aula1.anadirAlumno(a3);
 
         aula1.ordenar();
+        aula1.mostrarAlumnos();
 
         aula1.sorteo();
 
