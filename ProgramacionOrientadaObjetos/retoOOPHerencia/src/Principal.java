@@ -17,11 +17,13 @@ class Hora{
         minutos = 0;
     }
 
+    // Hacemos otro constructor y aseguramos que los datos introducidos sean válidos haciendolos pasar por los setter
     public Hora(int hora, int minutos){
         setHora(hora);
         setMinutos(minutos);
     }
 
+    // Creamos los getter
     public int getHora() {
         return hora;
     }
@@ -99,7 +101,8 @@ class Hora12 extends Hora{
         this.amPm = "am";
     }
 
-    // Aqui creamos un constructor normal, aunque en el caso de hora va a utilizar el nuevo setHora programador por el override
+    // Aqui creamos otro constructor, aunque en el caso de hora va a utilizar el nuevo setHora programado por el override
+    // hacemos pasar los datos introducidos por los setter para asegurar que son validos
     public Hora12(int hora, int minutos, String amPm){
         setHora(hora);
         setMinutos(minutos);
