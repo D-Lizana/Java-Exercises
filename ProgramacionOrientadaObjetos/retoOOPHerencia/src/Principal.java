@@ -4,18 +4,12 @@
 //o En este constructor se llamará al mé to do de setHora(hora) y setMinuto(minuto) para controlar los siguientes casos
 // de que la hora y los minutos se pongan correctamente, hora del 0 al 23 y minutos de 0 a 59
 //• Dispone de todos los métodos para acceder a los atributos
-//• Dispone de un mtodo inc, que incrementa un minuto. Hay que controlar el paso de minutos a horas
-//• Haz un overriding del mét odo toString, para que ponga hora : minutos
-//
-//b.  Realiza un programa principal donde se vea el funcionamiento de la clase, para ello introduce la hora de las 11:30 y repite el incremento 40 veces y muestra el resultado.
-// Luego cambia solo la hora a 20
-//
-//c. Crear una clase Hora12, que funciona de una forma similar a Hora, con la diferencia de que las horas solo pueden tomar los valores de 1 al 12,
-// y se distingue la mañana y la tarde con el String de am o pm. Haz un override de setHora(), inc() y el toString
+//• Dispone de un metodo inc, que incrementa un minuto. Hay que controlar el paso de minutos a horas
+//• Haz un overriding del metodo toString, para que ponga hora : minutos
 
 class Hora{
-    protected int hora;
-    protected int minutos;
+    private int hora;
+    private int minutos;
 
     public Hora(){
         hora = 0;
@@ -67,16 +61,16 @@ class Hora{
     @Override
     public String toString() {
         if(minutos>9 && hora<10){
-            return "0"+hora+":"+minutos;
+            return "Hora: "+"0"+hora+":"+minutos;
         }
         else if(minutos<10 && hora<10){
-            return "0"+hora+":0"+minutos;
+            return "Hora: "+"0"+hora+":0"+minutos;
         }
         else if(minutos<10 && hora>9){
-            return hora+":0"+minutos;
+            return "Hora: "+hora+":0"+minutos;
         }
         else{
-            return hora+":"+minutos;
+            return "Hora: "+hora+":"+minutos;
         }
         // return String.format("%02d:%02d",hora,minutos);
     }
@@ -84,6 +78,8 @@ class Hora{
 
 }
 
+//c. Crear una clase Hora12, que funciona de una forma similar a Hora, con la diferencia de que las horas solo pueden tomar los valores de 1 al 12,
+// y se distingue la mañana y la tarde con el String de am o pm. Haz un override de setHora(), inc() y el toString
 
 class Hora12 extends Hora{
     private String amPm;
@@ -109,6 +105,8 @@ class Hora12 extends Hora{
         }
     }
 
+
+
     @Override
     public void setHora(int hora) {
         if(hora>=1 && hora<13){
@@ -122,41 +120,35 @@ class Hora12 extends Hora{
 
     @Override
     public void inc(){
-        minutos++;
-        if(minutos==60){
-            minutos = 0;
-            hora++;
+        if(super.getMinutos()==59){
+            super.setMinutos(0);
+            super.setHora(super.getHora()+1);
+        }
+        else{
+            super.setMinutos(super.getMinutos()+1);
+        }
 
-        }if(hora==12 && amPm.equalsIgnoreCase("am")){
+        if(super.getHora()==12 && amPm.equalsIgnoreCase("am")){
             amPm = "pm";
         }
-        else if(hora==12 && amPm.equalsIgnoreCase("pm")){
+        else if(super.getHora()==12 && amPm.equalsIgnoreCase("pm")){
             amPm = "am";
         }
 
-        if(hora==13){
-            hora = 1;
+        if(super.getHora()==13){
+            super.setHora(1);
         }
     }
 
     @Override
     public String toString() {
-        if(minutos>9 && hora<10){
-            return "0"+hora+":"+minutos+amPm;
-        }
-        else if(minutos<10 && hora<10){
-            return "0"+hora+":0"+minutos+amPm;
-        }
-        else if(minutos<10 && hora>9){
-            return hora+":0"+minutos+amPm;
-        }
-        else{
-            return hora+":"+minutos+amPm;
-            // return String.format("%02d:%02d",hora,minutos);
+        return String.format("Hora12: "+"%02d:%02d",super.getHora(),super.getMinutos())+amPm;
         }
     }
-}
 
+//b.  Realiza un programa principal donde se vea el funcionamiento de la clase, para ello introduce la hora de las 11:30 y repite el incremento 40 veces y muestra el resultado.
+// Luego cambia solo la hora a 20
+//
 
 public class Principal {
     public static void main(String[] args) {
