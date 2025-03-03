@@ -1,0 +1,13 @@
+From: hola@damiansu.com
+Subject: Enviando mi primer correo
+Date: March 28, 2024 4:30:58 PM PDT
+To: jorge@damiansu.com
+Return-Path: <hola@damiansu.com>
+Delivery-Date: March 28, 2024 4:30:58 PM PDT
+Received: from smtpclient.apple (237.red-83-39-
+dynamicip. rima-tde.net [83.39.26.237]) by vps-832d94b4. vps.oh.net (Postfix) with ESMTPSA id 8E65E4A018;
+Tue, 28 Feb 2024 05:32:23 +0000 (UTC)
+Message- Id: <859066E9-E007-4A0C-91D2-
+5D9277A3E862@damiansu.com>
+
+Message Body: A ver si funciona el envío de correos. Hala «Madrid | Visca el Barca | Aúpa Atleti
