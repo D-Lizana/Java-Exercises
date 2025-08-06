@@ -49,6 +49,16 @@ public class Coche {
         this.color = color;
     }
 
+    // Como son para el atributo que tiene static, tenemos que añadir static en el getter y setter también
+    public static String getColorMatricula() {
+        return colorMatricula;
+    }
+
+    public static void setColorMatricula(String colorMatricula) {
+        // En este caso no podemos usar this porque static pertenece a la clase y no a la instancia, por eso llamamos directamente a la clase y la modificamos
+        Coche.colorMatricula = colorMatricula;
+    }
+
     @Override
     public String toString() {
         return "Coche{" +
