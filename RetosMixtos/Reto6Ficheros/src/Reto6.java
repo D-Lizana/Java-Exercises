@@ -15,13 +15,13 @@ public class Reto6 {
         String linea = paginaWeb.readLine();
         // He creado un boolean para que al finalizar el programa nos informe de si ha habido algo sospechoso o no.
         boolean codigoSospechoso = false;
-        // Añadimos un contador para que nos diga en que parte del código encuentra elementos extraños.
+        // Añadimos un contador para que nos diga en que linea exacta del código encuentra elementos extraños.
         int contadorLineas = 1;
 
         // Ahora ejecutamos un bucle while para que vaya leyendo el texto linea a linea hasta que llegue a una linea vacia (el final)
         while(linea!=null){
 
-            // El código va buscando linea a linea por elementos ocultos que podrían ser maliciosos, y si los encuenta, imprime un mensaje de error junto con el elemento encontrado y la linea del código
+            // El código va buscando linea a linea por elementos ocultos que podrían ser maliciosos, y si los encuenta, imprime un mensaje de error junto con el elemento descubierto y la linea del código en la que se encuentra
             if(linea.contains("style=\"display:none;\"")){
                 System.err.println("En la linea "+contadorLineas+" se ha detectado un elemento oculto usando style=\"display:none;\".");
                 codigoSospechoso = true;
@@ -37,6 +37,7 @@ public class Reto6 {
                 if(linea.contains("<a")){
                     System.err.println(" Además podría ser un link malicioso o de spam.");
                 }
+                System.out.println();
             }
 
             // Al final del bucle cambia a la linea siguiente.
