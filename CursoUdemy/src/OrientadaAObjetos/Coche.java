@@ -5,7 +5,7 @@ public class Coche {
     private int id;
     private String fabricante;
     private String modelo;
-    private String color;
+    private Color color;
     private double cilindrada;
 
     // static significa que es para toda la clase, no para la instancia que se crea usando la clase
@@ -13,6 +13,7 @@ public class Coche {
     private static int ultimoId;
 
     // FINAL es para una constante, no se puede modificar ni en la instancia ni en la clase y es solo de lectura
+    // Podemos usarlo para crear constantes (como los colores) y así asegurarnos de que nunca nos vamos a equivocar
     public static final Integer V_MAX_CARRETERA = 120;
 
     public Coche(){
@@ -25,12 +26,12 @@ public class Coche {
         this.modelo = modelo;
     }
 
-    public Coche(String fabricante, String modelo, String color){
+    public Coche(String fabricante, String modelo, Color color){
         this(fabricante,modelo);
         this.color = color;
     }
 
-    public Coche(String fabricante, String modelo, String color, double cilindrada){
+    public Coche(String fabricante, String modelo, Color color, double cilindrada){
         this(fabricante,modelo,color);
         this.cilindrada = cilindrada;
     }
@@ -67,11 +68,11 @@ public class Coche {
         this.modelo = modelo;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
