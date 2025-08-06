@@ -67,8 +67,8 @@ public class Coche {
         return sb.toString();
     }
 
-    public void calcularConsumo(int km, double porcentajeGasolina){
-        System.out.println("El gasto es de " + km/(deposito*porcentajeGasolina));
+    public void calcularConsumo(int km, double litrosGastados){
+        System.out.println("El gasto es de " + litrosGastados/(km/100) + " litros cada 100km");
     }
 
 
