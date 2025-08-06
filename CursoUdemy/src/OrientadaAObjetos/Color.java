@@ -20,6 +20,11 @@ public enum Color {
         return color;
     }
 
+    // Podemos añadir el toString para que al llamar o hacer print nos devuelva el color del atributo y no de la constante.
+    @Override
+    public String toString() {
+        return this.color;
+    }
 }
 
 
