@@ -2,18 +2,33 @@ package OrientadaAObjetos;
 
 public class Coche {
 
+    private int id;
     private String fabricante;
     private String modelo;
     private String color;
     private double cilindrada;
-    private int deposito = 60;
 
-    static String colorMatricula = "Rojigualda";
+    private static String colorMatricula = "Rojigualda";
+    private static int ultimoId;
 
-    public Coche(String fabricante, String modelo, String color, double cilindrada){
+
+    public Coche(){
+        this.id = ++ultimoId;
+    }
+
+    public Coche(String fabricante, String modelo){
+        this();
         this.fabricante = fabricante;
         this.modelo = modelo;
+    }
+
+    public Coche(String fabricante, String modelo, String color){
+        this(fabricante,modelo);
         this.color = color;
+    }
+
+    public Coche(String fabricante, String modelo, String color, double cilindrada){
+        this(fabricante,modelo,color);
         this.cilindrada = cilindrada;
     }
 
