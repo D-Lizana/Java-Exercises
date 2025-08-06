@@ -3,16 +3,10 @@ package OrientadaAObjetos;
 public class EjemplyCoche {
     public static void main(String[] args) {
 
-        Coche coche = new Coche();
+        Coche dacia = new Coche("Dacia","Duster","Azul",200.0);
 
-        coche.cilindrada = 2.0;
-        coche.modelo = "duster";
-        coche.color = "Azul";
-        coche.fabricante = "Dacia";
-
+        System.out.println(dacia.detalles());
 
 
     }
-
-
 }
