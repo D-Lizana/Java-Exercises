@@ -7,6 +7,7 @@ public class Coche {
     private String modelo;
     private Color color;
     private double cilindrada;
+    private Tipo tipo;
 
     // static significa que es para toda la clase, no para la instancia que se crea usando la clase
     private static String colorMatricula = "Rojigualda";
@@ -42,6 +43,14 @@ public class Coche {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
     }
 
     public void setFabricante(String fabricante){
@@ -89,9 +98,11 @@ public class Coche {
     @Override
     public String toString() {
         return "Coche{" +
+                "id='" + id + '\'' +
                 "fabricante='" + fabricante + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
+                ", tipo='" + tipo.getNombre() + '\'' +
+                ", color='" + color.getColor() + '\'' +
                 ", cilindrada=" + cilindrada +
                 ", colorMatricula='" + colorMatricula + '\'' +
                 '}';
@@ -102,7 +113,8 @@ public class Coche {
         sb.append("Id = " + this.id);
         sb.append("\nFabricate = " + this.fabricante);
         sb.append("\nModelo = " + this.modelo);
-        sb.append("\nColor= " + this.color);
+        sb.append("\nTipo = " + this.tipo.getNombre());
+        sb.append("\nColor= " + this.color.getColor());
         sb.append("\nCilindrada = " + this.cilindrada);
         sb.append("\nCilindrada = " + colorMatricula);
 
