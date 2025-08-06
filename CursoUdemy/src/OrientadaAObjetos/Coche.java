@@ -8,6 +8,8 @@ public class Coche {
     private double cilindrada;
     private int deposito = 60;
 
+    static String colorMatricula = "Rojigualda";
+
     public Coche(String fabricante, String modelo, String color, double cilindrada){
         this.fabricante = fabricante;
         this.modelo = modelo;
@@ -54,6 +56,7 @@ public class Coche {
                 ", modelo='" + modelo + '\'' +
                 ", color='" + color + '\'' +
                 ", cilindrada=" + cilindrada +
+                ", colorMatricula='" + colorMatricula + '\'' +
                 '}';
     }
 
@@ -63,6 +66,7 @@ public class Coche {
         sb.append("\nModelo = " + this.modelo);
         sb.append("\nColor= " + this.color);
         sb.append("\nCilindrada = " + this.cilindrada);
+        sb.append("\nCilindrada = " + colorMatricula);
 
         return sb.toString();
     }
