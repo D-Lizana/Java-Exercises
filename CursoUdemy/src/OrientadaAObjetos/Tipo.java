@@ -1,5 +1,6 @@
 package OrientadaAObjetos;
 
+// Es como una clase pero para datos que siempre son constantes (Dias de la semana, nombres, colores...)
 public enum Tipo {
     TODOTERRENO("Todoterreno", 5, "Coche Grande"),
     CAMIONETA("Camioneta", 4, "Grande"),

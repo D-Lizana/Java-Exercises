@@ -27,5 +27,14 @@ public class EjemploCocheSwitch {
                 System.out.println("Un coche deportivo, rápido y elegante");
         }
 
+        // Usamos .values() para obtener todos las constantes del enum directamente al array
+        Tipo[] tiposDeCoche = Tipo.values();
+
+        // podemos usar .name() para obtener el nombre de la constante dentro del enum
+        for(Tipo ta: tiposDeCoche){
+            System.out.println(ta.name() + " => " + ta.getNombre() + " ," + ta.getDescripcion() +  " ," + ta.getNumeroPuertas());
+        }
+
+
     }
 }
