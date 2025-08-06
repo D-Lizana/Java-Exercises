@@ -6,6 +6,7 @@ public class Coche {
     private String modelo;
     private String color;
     private double cilindrada;
+    private int deposito = 60;
 
     public Coche(String fabricante, String modelo, String color, double cilindrada){
         this.fabricante = fabricante;
@@ -64,6 +65,10 @@ public class Coche {
         sb.append("\nCilindrada = " + this.cilindrada);
 
         return sb.toString();
+    }
+
+    public void calcularConsumo(int km, double porcentajeGasolina){
+        System.out.println("El gasto es de " + km/(deposito*porcentajeGasolina));
     }
 
 
