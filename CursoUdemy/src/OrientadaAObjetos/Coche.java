@@ -8,9 +8,12 @@ public class Coche {
     private String color;
     private double cilindrada;
 
+    // static significa que es para toda la clase, no para la instancia que se crea usando la clase
     private static String colorMatricula = "Rojigualda";
     private static int ultimoId;
 
+    // FINAL es para una constante, no se puede modificar ni en la instancia ni en la clase y es solo de lectura
+    public static final Integer V_MAX_CARRETERA = 120;
 
     public Coche(){
         this.id = ++ultimoId;
@@ -30,6 +33,14 @@ public class Coche {
     public Coche(String fabricante, String modelo, String color, double cilindrada){
         this(fabricante,modelo,color);
         this.cilindrada = cilindrada;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setFabricante(String fabricante){
@@ -87,7 +98,8 @@ public class Coche {
 
     public String detalles(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Fabricate = " + this.fabricante);
+        sb.append("Id = " + this.id);
+        sb.append("\nFabricate = " + this.fabricante);
         sb.append("\nModelo = " + this.modelo);
         sb.append("\nColor= " + this.color);
         sb.append("\nCilindrada = " + this.cilindrada);
