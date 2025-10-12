@@ -1,8 +1,9 @@
 import java.io.*;
 import java.nio.file.*;
 import java.util.List;
+import java.util.Scanner;
 
-public class EjercicioSupermercado {
+public class WritersYReaders {
 
     public static void main(String[] args) {
 
@@ -67,6 +68,22 @@ public class EjercicioSupermercado {
 
     }
 
+    public static void leerArchivoFileReader(String archivo){
+
+        try{
+            FileReader fr = new FileReader(archivo);
+            int character;
+
+            while((character = fr.read()) != -1){
+                System.out.println((char) character);
+            }
+            fr.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void leerArchivoBufferedReader(String archivo){
 
         try{
@@ -82,6 +99,23 @@ public class EjercicioSupermercado {
             e.printStackTrace();
         }
     }
+
+    public static void leerScanner(String archivo){
+
+        try{
+            Scanner scanner = new Scanner(new File(archivo));
+
+            while(scanner.hasNextLine()){
+                String linea = scanner.nextLine();
+                System.out.println(linea);
+            }
+            scanner.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public static void escribirFileWriter(String archivo, String texto){
         try{
