@@ -9,7 +9,7 @@ public class WritersYReaders {
 
         try{
             crearFichero("Supermercado.txt");
-            escribirArchivoBufferedWriter("Supermercado.txt", "Martillo", 30, 10.00);
+            escribirArchivoBufferedWriter("Supermercado.txt", "Martillo");
             leerArchivoBufferedReader("Supermercado.txt");
         }catch (IOException e){
             e.printStackTrace();
