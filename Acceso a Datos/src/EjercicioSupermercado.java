@@ -1,7 +1,5 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.*;
 
 public class EjercicioSupermercado {
 
@@ -138,18 +136,32 @@ public class EjercicioSupermercado {
 
     public static void anadirPrintWriter(String archivo, String texto){
         try{
-            BufferedWriter bw = new BufferedWriter(new FileWriter(archivo, true));
-            bw.write(texto);
-            bw.newLine();
-            bw.close();
+            PrintWriter pw = new PrintWriter(new FileWriter(archivo, true));
+            pw.println(texto);
+            pw.println();
+            pw.close();
             System.out.println("Texto añadido correctamente.");
-
 
         }catch (IOException e){
             e.printStackTrace();
         }
     }
 
+    public static void escribirConFiles(String archivo, String texto){
+        try{
+            Files.write(Paths.get(archivo), texto.getBytes());
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void anadirConFiles(String archivo, String texto){
+        try{
+            Files.write(Paths.get(archivo), texto.getBytes(), StandardOpenOption.APPEND, StandardOpenOption.CREATE);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
 
 
