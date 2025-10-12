@@ -1,5 +1,6 @@
 import java.io.*;
 import java.nio.file.*;
+import java.util.List;
 
 public class EjercicioSupermercado {
 
@@ -158,6 +159,15 @@ public class EjercicioSupermercado {
     public static void anadirConFiles(String archivo, String texto){
         try{
             Files.write(Paths.get(archivo), texto.getBytes(), StandardOpenOption.APPEND, StandardOpenOption.CREATE);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void anadirConFiles(String archivo, List<String> lineas){
+        Path path = Paths.get(archivo);
+        try{
+            Files.write(path, lineas);
         }catch (IOException e){
             e.printStackTrace();
         }
