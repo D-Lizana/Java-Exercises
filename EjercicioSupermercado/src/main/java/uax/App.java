@@ -1,10 +1,9 @@
-package uax;
+package EjercicioSupermercado.src.main.java.uax;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class App
-{
+public class App {
     public static void main( String[] args ) {
         Scanner sc = new Scanner(System.in);
         int opcion;
