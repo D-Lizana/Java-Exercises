@@ -66,13 +66,14 @@ public class App
                     break;
 
                 case 5:
-                    System.out.println("Consultar nota de un alumno/a...");
-                    // consultarNota();
+                    System.out.println("Expediente: ");
+                    int expediente5 = sc.nextInt();
+
+                    listaDeAlumnos.consultarNota(expediente5);
                     break;
 
                 case 6:
-                    System.out.println("Consultar todas las notas...");
-                    // consultarTodasLasNotas();
+                    listaDeAlumnos.consultarTodasNotas();
                     break;
 
                 case 0:
@@ -85,9 +86,6 @@ public class App
 
         } while (opcion != 0);
         sc.close();
-
-
-
 
     }
 }
