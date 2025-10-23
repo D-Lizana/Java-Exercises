@@ -1,5 +1,4 @@
-package EjercicioFicherosAlumnos.src.main.java.uax;
-
+package uax;
 
 public class Alumno {
 

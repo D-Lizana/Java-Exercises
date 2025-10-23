@@ -1,4 +1,4 @@
-package EjercicioFicherosAlumnos.src.main.java.uax;
+package uax;
 
 import java.util.Scanner;
 
@@ -22,12 +22,12 @@ public class App
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
 
-            opcion = sc.nextInt();
+            opcion = Integer.parseInt(sc.nextLine());
 
             switch (opcion) {
                 case 1:
                     System.out.println("Expediente: ");
-                    int expediente = sc.nextInt();
+                    int expediente = Integer.parseInt(sc.nextLine());
 
                     System.out.println("Nombre y Apellidos: ");
                     String nombre = sc.nextLine();
@@ -39,17 +39,17 @@ public class App
 
                 case 2:
                     System.out.println("Expediente: ");
-                    int expediente2 = sc.nextInt();
+                    int expediente2 = Integer.parseInt(sc.nextLine());
 
                     listaDeAlumnos.bajaAlumno(expediente2);
                     break;
 
                 case 3:
                     System.out.println("Seleccione expediente: ");
-                    int expediente3 = sc.nextInt();
+                    int expediente3 = Integer.parseInt(sc.nextLine());
 
                     System.out.println("Introduzca nota: ");
-                    double nota3 = sc.nextDouble();
+                    double nota3 = Double.parseDouble(sc.nextLine());
 
                     listaDeAlumnos.insertarNota(expediente3,nota3);
 
@@ -57,17 +57,17 @@ public class App
 
                 case 4:
                     System.out.println("Seleccione expediente: ");
-                    int expediente4 = sc.nextInt();
+                    int expediente4 = Integer.parseInt(sc.nextLine());
 
                     System.out.println("Introduzca nueva nota: ");
-                    double nota4 = sc.nextDouble();
+                    double nota4 = Double.parseDouble(sc.nextLine());
 
                     listaDeAlumnos.insertarNota(expediente4,nota4);
                     break;
 
                 case 5:
                     System.out.println("Expediente: ");
-                    int expediente5 = sc.nextInt();
+                    int expediente5 = Integer.parseInt(sc.nextLine());
 
                     listaDeAlumnos.consultarNota(expediente5);
                     break;

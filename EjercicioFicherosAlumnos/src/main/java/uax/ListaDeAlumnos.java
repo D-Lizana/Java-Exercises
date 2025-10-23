@@ -1,4 +1,4 @@
-package EjercicioFicherosAlumnos.src.main.java.uax;
+package uax;
 
 import java.util.ArrayList;
 
