@@ -9,6 +9,8 @@ public class App
         Scanner sc = new Scanner(System.in);
         int opcion;
 
+        ListaDeAlumnos listaDeAlumnos = new ListaDeAlumnos();
+
         do {
             System.out.println("\n=== MENÚ DE GESTIÓN DE ALUMNOS ===");
             System.out.println("1. Dar de alta un alumno/a");
@@ -24,23 +26,43 @@ public class App
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Dar de alta un alumno/a...");
-                    // darDeAltaAlumno();
+                    System.out.println("Expediente: ");
+                    int expediente = sc.nextInt();
+
+                    System.out.println("Nombre y Apellidos: ");
+                    String nombre = sc.nextLine();
+
+                    Alumno alumno = new Alumno(expediente, nombre);
+
+                    listaDeAlumnos.anadirAlumno(alumno);
                     break;
 
                 case 2:
-                    System.out.println("Dar de baja un alumno/a...");
-                    // darDeBajaAlumno();
+                    System.out.println("Expediente: ");
+                    int expediente2 = sc.nextInt();
+
+                    listaDeAlumnos.bajaAlumno(expediente2);
                     break;
 
                 case 3:
-                    System.out.println("Insertar nota a un alumno/a...");
-                    // insertarNota();
+                    System.out.println("Seleccione expediente: ");
+                    int expediente3 = sc.nextInt();
+
+                    System.out.println("Introduzca nota: ");
+                    double nota3 = sc.nextDouble();
+
+                    listaDeAlumnos.insertarNota(expediente3,nota3);
+
                     break;
 
                 case 4:
-                    System.out.println("Modificar nota de un alumno/a...");
-                    // modificarNota();
+                    System.out.println("Seleccione expediente: ");
+                    int expediente4 = sc.nextInt();
+
+                    System.out.println("Introduzca nueva nota: ");
+                    double nota4 = sc.nextDouble();
+
+                    listaDeAlumnos.insertarNota(expediente4,nota4);
                     break;
 
                 case 5:

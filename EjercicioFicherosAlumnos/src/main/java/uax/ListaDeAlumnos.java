@@ -26,34 +26,43 @@ public class ListaDeAlumnos {
     }
 
     public void insertarNota(int expediente, double nota){
+        boolean existe = false;
         for(Alumno alumno: alumnos){
             if(alumno.getExpediente() == expediente){
                 alumno.setNota(nota);
-                break;
+                existe = true;
             }
         }
-        System.out.println("Expediente no encontrado.");
+        if(!existe){
+            System.out.println("Expediente no encontrado.");
+        }
     }
 
     public void modificarNota(int expediente, double nota){
+        boolean existe = false;
         for(Alumno alumno: alumnos){
             if(alumno.getExpediente() == expediente){
                 alumno.setNota(nota);
-                break;
+                existe = true;
             }
         }
-        System.out.println("Expediente no encontrado.");
+        if(!existe){
+            System.out.println("Expediente no encontrado.");
+        }
     }
 
     public void consultarNota(int expediente){
+        boolean existe = false;
         for(Alumno alumno: alumnos){
             if(alumno.getExpediente() == expediente){
                 System.out.println("Nota: "+alumno.getNota());
-                break;
+                existe = true;
             }
         }
 
-        System.out.println("Expediente no encontrado.");
+        if(!existe){
+            System.out.println("Expediente no encontrado.");
+        }
     }
 
     public void consultarTodasNotas(){
