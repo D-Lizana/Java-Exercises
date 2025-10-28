@@ -8,6 +8,7 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class GestorJSON {
 
@@ -82,6 +83,15 @@ public class GestorJSON {
     }
 
 
+    public void borrarPorMarca(String marca){
+        List<Coche> coches = leerCoches();
+        List<Coche> filtrados = coches.stream()
+                .filter(c -> !c.getMarca().equalsIgnoreCase(marca))
+                .collect(Collectors.toList());
+
+        guardarCoches(filtrados);
+        System.out.println("Coche(s) borrado(s) correctamente.");
+    }
 
 
 
