@@ -74,7 +74,12 @@ public class GestorJSON {
         }
     }
 
-
+    public void insertarCoche(Coche nuevoCoche){
+        List<Coche> coches = leerCoches();
+        coches.add(nuevoCoche);
+        guardarCoches(coches);
+        System.out.println("Coche insertado correctamente;");
+    }
 
 
 

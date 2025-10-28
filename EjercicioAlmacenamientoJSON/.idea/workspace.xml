@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Created json file and car class to import and export data">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uax/GestorJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="added JSON file writer method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/uax/GestorJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uax/GestorJSON.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +71,38 @@
       <option name="project" value="LOCAL" />
       <updated>1761647643376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created JSON manager file and added file creation method">
+      <option name="closed" value="true" />
+      <created>1761648565521</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761648565521</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added JSON file reader method">
+      <option name="closed" value="true" />
+      <created>1761648820066</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761648820066</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added JSON file writer method">
+      <option name="closed" value="true" />
+      <created>1761648998290</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761648998290</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created json file and car class to import and export data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created json file and car class to import and export data" />
+    <MESSAGE value="created JSON manager file and added file creation method" />
+    <MESSAGE value="added JSON file reader method" />
+    <MESSAGE value="added JSON file writer method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added JSON file writer method" />
   </component>
 </project>
