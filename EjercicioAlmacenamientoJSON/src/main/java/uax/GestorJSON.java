@@ -93,6 +93,17 @@ public class GestorJSON {
         System.out.println("Coche(s) borrado(s) correctamente.");
     }
 
+    public void mostrarCoches(){
+        List<Coche> coches = leerCoches();
+        if(coches.isEmpty()){
+            System.out.println("No hay coches registrados.");
+        }
+        else{
+            System.out.println("Lista de coches:");
+            coches.forEach(System.out::println);
+        }
+    }
+
 
 
 }
