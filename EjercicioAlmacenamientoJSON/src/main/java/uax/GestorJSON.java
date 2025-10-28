@@ -1,8 +1,11 @@
 package uax;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,14 +52,21 @@ public class GestorJSON {
         }
 
         try(Reader reader = new FileReader(file)){
+            // lee la lista de coches
+            Type listType = new TypeToken<List<Coche>>(){}.getType();
+            // retorna la lista obtenida del reader
+            return gson.fromJson(reader,listType);
 
-
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
         }
-
     }
+
+
+
+
+
 
 
 }
