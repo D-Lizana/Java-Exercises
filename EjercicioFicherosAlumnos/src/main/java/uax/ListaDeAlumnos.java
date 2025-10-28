@@ -7,7 +7,11 @@ public class ListaDeAlumnos {
     private ArrayList<Alumno> alumnos;
 
     public ListaDeAlumnos() {
-        this.alumnos = new ArrayList<Alumno>();
+        this.alumnos = new ArrayList<>();
+    }
+
+    public ArrayList<Alumno> getAlumnos() {
+        return alumnos;
     }
 
     public void anadirAlumno(Alumno alumno){

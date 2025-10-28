@@ -29,4 +29,12 @@ public class Alumno {
     public double getNota() {
         return nota;
     }
+
+    @Override
+    public String toString() {
+        return "Alumno: " +
+                "Expediente: " + expediente +
+                ", Nombre Y Apellidos: " + nombreYApellidos+
+                ", Nota: " + nota;
+    }
 }

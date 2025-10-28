@@ -1,11 +1,16 @@
 package uax;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.Scanner;
 
-public class App
-{
+public class App {
+
+
     public static void main( String[] args ) {
 
+        File archivo = new File("archivo.txt");
         Scanner sc = new Scanner(System.in);
         int opcion;
 
@@ -32,9 +37,16 @@ public class App
                     System.out.println("Nombre y Apellidos: ");
                     String nombre = sc.nextLine();
 
-                    Alumno alumno = new Alumno(expediente, nombre);
+                    Alumno alumnoCreado = new Alumno(expediente, nombre);
 
-                    listaDeAlumnos.anadirAlumno(alumno);
+                    listaDeAlumnos.anadirAlumno(alumnoCreado);
+
+                    try(BufferedWriter bw = new BufferedWriter(new FileWriter("archivo.txt", true))){
+                        bw.write(alumnoCreado.toString());
+
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
 
                 case 2:
@@ -42,6 +54,18 @@ public class App
                     int expediente2 = Integer.parseInt(sc.nextLine());
 
                     listaDeAlumnos.bajaAlumno(expediente2);
+
+                    try(BufferedWriter bw = new BufferedWriter(new FileWriter("archivo.txt"))){
+
+                        for(Alumno alumno: listaDeAlumnos.getAlumnos()){
+                            bw.write(alumno.toString());
+                        }
+
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+
+
                     break;
 
                 case 3:
@@ -52,6 +76,8 @@ public class App
                     double nota3 = Double.parseDouble(sc.nextLine());
 
                     listaDeAlumnos.insertarNota(expediente3,nota3);
+
+
 
                     break;
 
@@ -88,4 +114,18 @@ public class App
         sc.close();
 
     }
+
+    public static void crearAlumno(){
+        System.out.println("Expediente: ");
+        int expediente = Integer.parseInt(sc.nextLine());
+
+        System.out.println("Nombre y Apellidos: ");
+        String nombre = sc.nextLine();
+
+        Alumno alumnoCreado = new Alumno(expediente, nombre);
+
+        listaDeAlumnos.anadirAlumno(alumnoCreado);
+    }
+
+
 }
