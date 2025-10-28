@@ -6,6 +6,7 @@ import org.json.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class GestorJSONorg {
 
@@ -92,7 +93,35 @@ public class GestorJSONorg {
         }catch (IOException e){
             e.printStackTrace();
         }
-
     }
+
+    public void insertarCoche(Coche nuevoCoche){
+        List<Coche> coches = leerCoches();
+        coches.add(nuevoCoche);
+        guardarCoches(coches);
+        System.out.println("Coche insertado correctamente;");
+    }
+
+    public void borrarPorMarca(String marca){
+        List<Coche> coches = leerCoches();
+        List<Coche> filtrados = coches.stream()
+                .filter(c -> !c.getMarca().equalsIgnoreCase(marca))
+                .collect(Collectors.toList());
+
+        guardarCoches(filtrados);
+        System.out.println("Coche(s) borrado(s) correctamente.");
+    }
+
+    public void mostrarCoches(){
+        List<Coche> coches = leerCoches();
+        if(coches.isEmpty()){
+            System.out.println("No hay coches registrados.");
+        }
+        else{
+            System.out.println("Lista de coches:");
+            coches.forEach(System.out::println);
+        }
+    }
+
 
 }
