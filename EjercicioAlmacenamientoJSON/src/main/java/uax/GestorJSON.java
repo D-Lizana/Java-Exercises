@@ -64,6 +64,17 @@ public class GestorJSON {
     }
 
 
+    public void guardarCoches(List<Coche> coches){
+        try(Writer writer = new FileWriter(rutaJSON)){
+            // Abre el archivo JSON con el writer y añade la lista coches
+            gson.toJson(coches, writer);
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 
