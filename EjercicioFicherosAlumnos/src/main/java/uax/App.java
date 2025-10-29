@@ -76,9 +76,6 @@ public class App {
                     double nota3 = Double.parseDouble(sc.nextLine());
 
                     listaDeAlumnos.insertarNota(expediente3,nota3);
-
-
-
                     break;
 
                 case 4:
@@ -114,18 +111,5 @@ public class App {
         sc.close();
 
     }
-
-    public static void crearAlumno(){
-        System.out.println("Expediente: ");
-        int expediente = Integer.parseInt(sc.nextLine());
-
-        System.out.println("Nombre y Apellidos: ");
-        String nombre = sc.nextLine();
-
-        Alumno alumnoCreado = new Alumno(expediente, nombre);
-
-        listaDeAlumnos.anadirAlumno(alumnoCreado);
-    }
-
 
 }

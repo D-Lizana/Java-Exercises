@@ -29,11 +29,18 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- API de JAXB -->
+    <!-- API de Jakarta (Antiguo JAXB) -->
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
-      <version>4.0.2</version>
+      <version>3.0.1</version>
+    </dependency>
+
+    <!-- Implementación de referencia (Glassfish JAXB) -->
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <version>3.0.1</version>
     </dependency>
 
   </dependencies>
