@@ -2,9 +2,7 @@ package uax.database;
 
 import uax.model.Moto;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -33,7 +31,28 @@ public class GestionBD {
     }
 
     public List<Moto> leerMotos(){
-        return null;
+        listaMotos.clear();
+        String sql = "SELECT * FROM motos";
+        Connection conn = ConexionBD.conectar();
+
+        try(Statement statement = conn.createStatement()){
+            ResultSet rs = statement.executeQuery(sql);
+
+            while(rs.next()){
+                Moto moto = new Moto(rs.getInt("id"),
+                        rs.getString("marca"),
+                        rs.getString("modelo"),
+                        rs.getString("cilindrada"));
+
+                listaMotos.add(moto);
+            }
+
+        }catch(SQLException e){
+            System.out.println("Error al leer la base de datos.");
+        }finally{
+            ConexionBD.desconectar(conn);
+        }
+        return listaMotos;
     }
 
     public List<Moto> leerMotosPorMarca(String marca){
