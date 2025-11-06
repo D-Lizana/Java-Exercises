@@ -21,4 +21,15 @@ public class ConexionBD {
         }
     }
 
+    public static void desconectar(Connection conn){
+        try{
+            if(conn != null && !conn.isClosed()){
+                conn.close();
+                System.out.println("Cerrada la conexión correctamente.");
+            }
+        }catch(SQLException e){
+            System.out.println("Error al cerrar la conexión.");
+        }
+    }
+
 }
