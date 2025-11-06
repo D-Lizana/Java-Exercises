@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Added methods to insert and delete cars from the json file">
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/test/java/uax/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjercicioMotosXML/src/main/java/uax/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioMotosXML/src/main/java/uax/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjercicioMotosXML/src/main/java/uax/services/xmlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioMotosXML/src/main/java/uax/services/xmlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/ConexionBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/model/motos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/model/Moto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
