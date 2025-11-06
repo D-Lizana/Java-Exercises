@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Added methods to insert and delete cars from the json file">
-      <change beforePath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/ConexionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/ConexionBD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/GestionBD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
