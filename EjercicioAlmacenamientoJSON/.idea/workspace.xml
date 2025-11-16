@@ -5,8 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Added methods to insert and delete cars from the json file">
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/java/uax/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/java/uax/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/java/uax/dao/GestionBD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/java/uax/dao/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/java/uax/model/Moto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateAlumnosNotas/src/test/java/uax/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/database/ConexionDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/database/GestionDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/model/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/model/GestorJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/uax/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/resources/coches.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/test/java/uax/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/GestionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EjercicioGestionMotos/src/main/java/uax/database/GestionBD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
