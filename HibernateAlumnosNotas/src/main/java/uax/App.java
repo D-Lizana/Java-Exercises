@@ -1,13 +1,12 @@
 package uax;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import jakarta.transaction.SystemException;
+import uax.controller.AppController;
+
+public class App {
+    public static void main( String[] args ) throws SystemException {
+
+        AppController ac = new AppController();
+        ac.mostrarMenu();
     }
 }
