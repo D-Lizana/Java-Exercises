@@ -19,7 +19,6 @@ public class HibernateUtil {
             System.err.println("Error creando SessionFactory: "+ e);
             throw new ExceptionInInitializerError(e);
         }
-
     }
 
     public static void shutdown(){

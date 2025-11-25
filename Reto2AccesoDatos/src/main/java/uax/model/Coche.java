@@ -1,32 +1,50 @@
 package uax.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "coches")
+@Table(name = "coche")
 public class Coche {
-    @Column(name = "marca", length = 20, nullable = false)
-    private String marca;
 
-    @Column(name = "modelo")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+
+    private String marca;
     private String modelo;
 
     @Column(name = "anno_fabricacion")
-    private int anno_fabricacion;
+    private int annoFabricacion;
 
-    @Column(name = "precio")
     private Double precio;
+    private boolean vendido = false;
+
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
+
+    public Coche(String marca, String modelo, int annoFabricacion, Double precio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.annoFabricacion = annoFabricacion;
+        this.precio = precio;
+    }
 
     @Override
     public String toString() {
-        return marca + ", " + modelo + ", " + anno_fabricacion + ", " + precio + "€";
+        if(!vendido){
+            return "ID: "+ id + ", " + marca + ", " + modelo + ", " + annoFabricacion + ", " + precio + "€, Disponible.";
+        }
+        else{
+            return marca + ", " + modelo + ", " + annoFabricacion + ", " + precio + "€, vendido a " + cliente;
+        }
     }
 }
