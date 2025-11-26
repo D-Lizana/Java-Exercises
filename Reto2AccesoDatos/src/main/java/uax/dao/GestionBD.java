@@ -69,11 +69,9 @@ public class GestionBD {
 
             coche.setCliente(cliente);
             coche.setVendido(true);
-
             session.update(coche);
 
             tx.commit();
-
             System.out.println("Coche vendido correctamente.");
 
         } catch (Exception e) {
@@ -82,8 +80,6 @@ public class GestionBD {
                 System.out.println("Error al modificar la base de datos.");
             }
         }
-
-
     }
 
     public void mostrarCochesVendidos() {

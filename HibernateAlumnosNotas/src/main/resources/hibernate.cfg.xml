@@ -23,6 +23,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mapping -->
-        <mapping class="com.hibernate.model.Moto"/>
+        <mapping class="uax.model.Moto"/>
     </session-factory>
 </hibernate-configuration>

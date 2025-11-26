@@ -96,11 +96,7 @@ public class GestorJSON {
 
     public void eliminarCoche(Coche cocheBorrar) {
         List<Coche> cochesNuevos = leerCoches();
-        for (Coche coche : cochesNuevos) {
-            if (coche == cocheBorrar) {
-                cochesNuevos.remove(coche);
-            }
-        }
+        cochesNuevos.removeIf(coche -> coche.equals(cocheBorrar));
         guardarCochesNuevos(cochesNuevos);
     }
 
