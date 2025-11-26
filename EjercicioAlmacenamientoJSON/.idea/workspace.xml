@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Added methods to insert and delete cars from the json file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/database/GestionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/database/GestionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/model/GestorJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/java/model/GestorJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/resources/coches.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto1AccesoDatos/src/main/resources/coches.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto2AccesoDatos/src/main/java/uax/dao/GestionBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto2AccesoDatos/src/main/java/uax/dao/GestionBD.java" afterDir="false" />
-    </list>
+    <list default="true" id="12144123-0437-4f44-8cea-8e0afdbfec6d" name="Changes" comment="Added methods to insert and delete cars from the json file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
