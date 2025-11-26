@@ -23,4 +23,40 @@ void main(){
   direccion = 101;
   print("La direccion del usuario es ${direccion*2}");
 
+  saludar(nombre,"Lunes");
+  saludarNominal(nombre: "pepe", mes: "segundo");
+  saludarNominalEspecifico(mes: 2);
 }
+
+void saludar(String nombre, [String dia = "Miercoles"]){
+  print("Enhorabuena $nombre. jaja salu2");
+  print("Estamos a $dia");
+}
+
+void saludarNominal({var nombre, var mes}){
+  print("Oh $nombre, morituri te salutant en $mes");
+}
+
+void saludarNominalEspecifico({String? nombre=null, required int mes}){
+  if(nombre == null){
+    print("Tolai");
+  }else{
+    print("Oh $nombre, morituri te salutant en $mes");
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
