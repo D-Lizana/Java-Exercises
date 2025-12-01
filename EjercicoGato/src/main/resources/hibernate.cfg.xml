@@ -7,6 +7,7 @@
     <session-factory>
 
         <!-- Conexión a la base de datos -->
+        <!-- DRIVER Y DATOS DE CONEXION DE LA BASE DE DATOS CORRESPONDIENTE-->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/uax</property>
         <property name="hibernate.connection.username">postgres</property>
@@ -23,7 +24,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mapping -->
-        <mapping class="uax.model.Coche"/>
-        <mapping class="uax.model.Cliente"/>
+        <!-- AQUI SE MAPEAN LAS CLASES CON LAS QUE VAMOS A TRABAJAR EN LA BASE DE DATOS -->
+        <mapping class="uax.model.Gato"/>
     </session-factory>
 </hibernate-configuration>
