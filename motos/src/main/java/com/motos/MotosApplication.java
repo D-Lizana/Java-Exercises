@@ -13,3 +13,4 @@ public class MotosApplication {
 		// En el arranque Spring detecta tu @Entity y configura JPA/Hibernate según application.properties
 	}
 }
+

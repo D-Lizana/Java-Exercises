@@ -12,3 +12,4 @@ import org.springframework.stereotype.Repository;
 public interface MotoRepository extends JpaRepository<Moto, Integer> {
 
 }
+

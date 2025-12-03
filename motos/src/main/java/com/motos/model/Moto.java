@@ -25,4 +25,5 @@ public class Moto {
     private int id;
     private String marca;
     private int cilindrada;
+
 }
